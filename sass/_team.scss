@@ -1,0 +1,37 @@
+.team {
+    padding: 150px 0;
+    background-color: $gray-light;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-content {
+        max-width: 370px;
+        flex-shrink: 0;
+        width: 100%;
+    }
+    &-images {
+        width: 100%;
+        max-width: 670px;
+    }
+    &-heading {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    &-desc {
+        line-height: lineH(34, 18);
+        margin-bottom: 60px;
+    }
+    &-images {
+        display: flex;
+        align-items: center;
+        gap: 0 30px;
+    }
+    &-image2 {
+        margin-top: 30px;
+        margin-left: auto;
+    }
+}
