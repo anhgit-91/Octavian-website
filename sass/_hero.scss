@@ -1,12 +1,15 @@
 .hero {
     position: relative;
     margin-bottom: 200px;
+    display: block;
     &-image {
         margin-left: auto;
+        max-width: 65%;
     }
     &-content {
         position: absolute;
         top: 50%;
+        left: 20%;
         transform: translateY(-50%);
         color: $gray;
         z-index: 2;
@@ -27,5 +30,40 @@
         color: $gray-medium;
         display: inline-block;
         font-weight: 600;
+        transition: all 0.2s linear;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+        }
+    }
+    // Responsive
+    @include maxw(1023px) {
+        margin-bottom: 100px;
+        &-caption {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        &-heading {
+            font-size: 100px;
+        }
+    }
+    @include maxw(767px) {
+        margin-bottom: 50px;
+        &-content {
+            left: 15px;
+        }
+        &-caption {
+            font-size: 20px;
+        }
+        &-heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        &-link {
+            font-size: 16px;
+        }
+        &-image {
+            max-width: 75%;
+        }
     }
 }

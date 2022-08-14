@@ -13,9 +13,22 @@
     &-phone {
         color: $gray;
         font-weight: 300;
-        span {
+        a {
             font-weight: 600;
             margin-left: 15px;
+            color: inherit;
+        }
+    }
+    @include maxw(1023px) {
+        margin-bottom: 20px;
+        &-phone {
+            display: none;
+        }
+        &-navigation {
+            gap: 0 20px;
+        }
+        &-main {
+            padding: 20px 0;
         }
     }
 }

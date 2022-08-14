@@ -1,6 +1,7 @@
-@import "reset";
 @import "variables";
+@import "mixin";
 @import "function";
+@import "reset";
 @import "base";
 @import "header";
 @import "hero";
@@ -8,3 +9,6 @@
 @import "partner";
 @import "team";
 @import "blog";
+@import "contact";
+@import "footer";
+@import "menu";
