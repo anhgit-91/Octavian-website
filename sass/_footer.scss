@@ -85,6 +85,12 @@
         right: 0;
         transform: translateY(-50%);
         z-index: 2;
+        transition: all 0.2s linear;
+        &:hover,
+        &:focus {
+            color: $blue-color;
+            background-color: white;
+        }
     }
     @include maxw(1023px) {
         &-top {

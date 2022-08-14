@@ -19,6 +19,9 @@
             color: inherit;
         }
     }
+    &-search {
+        cursor: pointer;
+    }
     @include maxw(1023px) {
         margin-bottom: 20px;
         &-phone {
